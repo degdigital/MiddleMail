@@ -1,0 +1,4 @@
+sampleContentArea:
+    image: "http://placehold.it/75x75"
+    url: "http://www.google.com"
+    test: "This is just a sample content area"

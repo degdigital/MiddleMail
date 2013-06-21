@@ -1,0 +1,131 @@
+$blue: #0099ff;
+
+td[class=body] {
+     @media only screen and (max-width: 599px) {
+        padding: 0 9px;
+        width: auto !important;
+        .hero img { max-width: 100% !important; height: auto !important; }
+    }
+
+    /** Preheader **/
+    .preheader {
+        @media only screen and (max-width: 530px) {
+            .col {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+
+    /** Header **/
+    .header {
+        @media only screen and (max-width: 485px) {
+            .nav { display: none; }
+        }
+    }
+
+    .social {
+        @media only screen and (max-width: 485px) {
+            .header, .icons { display: block;}
+        }
+    }
+
+    /** Main **/
+    .main {
+        /** Feature **/
+        .feature {
+            @media only screen and (max-width: 485px) {
+                .col {
+                    display: block;
+                    width: 92%;
+                    margin: 0 auto;
+                    padding: 0 !important;
+                    text-align: center;
+                    img { margin: 0 auto 14px auto; }
+                }
+            }
+        }
+
+        /** Coupon Code **/
+        .couponCode {
+            @media only screen and (max-width: 485px) {
+                .col {
+                    display: block;
+                    width: 100%;
+                    img { margin: 0 auto; }
+                    td { text-align: center; }
+                    .code { padding-bottom: 14px; }
+                }
+            }
+        }
+
+        .featured-product {
+            @media only screen and (max-width: 485px) {
+                .col {
+                    display: block;
+                    width: 100%;
+                    margin-bottom:10px;
+                    img { margin: 0 auto; }
+                }
+            }
+        }
+
+        /** Video **/
+        .video {
+            @media only screen and (max-width: 599px) {
+                img { max-width: 100% !important; height: auto !important; }
+            }
+            @media only screen and (max-width: 400px) {
+                .col {
+                    display: block;
+                    width: 100% !important;
+                    padding: 0 !important;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    table, img { margin: 0 auto; }
+                }
+                .col.copy {
+                    padding: 20px 0 !important;
+                    td {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+
+        /** Video Product **/
+        .videoProducts {
+            @media only screen and (max-width: 550px) {
+                .col {
+                    display: block;
+                    width: 100%;
+                }
+                .title {
+                    display: block;
+                    float: left;
+                    width: 50%;
+                }
+                .image {
+                    text-align: left;
+                    width: auto !important;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    &:first-child { padding-left: 0; }
+                }
+            }
+            @media only screen and (max-width: 400px) {
+                .title {
+                    width: 100%;
+                    float: none;
+                }
+                .image {
+                    img { max-width: 100%; }
+                }
+            }
+        }
+    }
+
+}
+

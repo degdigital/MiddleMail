@@ -1,0 +1,41 @@
+<%
+
+    ampscript_dir = build_dir + "/ampscript/"
+    ampscript_file = File.basename(current_page.path, '.*')
+    ampscript_doc = "<!--\n%%[\n"
+    page_data = data.template[ampscript_file]
+
+    if is_building == true && data.template[ampscript_file]
+        
+        i = 0;
+        data.template[ampscript_file].each do |key, value|
+            ampscript_doc += i == 0 ? "var " : ", "
+            ampscript_doc += "var @" + ampscript_file + '_' + key
+            i = i + 1
+        end
+
+        ampscript_doc += "\n"
+
+        data.template[ampscript_file].each do |key, value|
+            ampscript_doc += "set @" + ampscript_file + '_' + key + " = \"" + value + "\"\n"
+        end
+    end
+%>
+
+<%= yield %>
+
+<%
+
+    ampscript_doc += "]%%\n-->\n"
+    ampscript_doc += sprintf('%%%%=ContentAreaByName("%s%s")=%%%%', et_content_dir, current_page.data.title)
+
+    unless File.directory?(ampscript_dir)
+        FileUtils.mkdir_p(ampscript_dir)
+    end
+
+    File.open(ampscript_dir + ampscript_file + ".amp", File::WRONLY|File::CREAT) {|f| 
+        f.truncate(0)
+        f.write(ampscript_doc) 
+    }
+
+%>
