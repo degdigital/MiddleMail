@@ -9,7 +9,7 @@
         
         i = 0;
         data.template[ampscript_file].each do |key, value|
-            ampscript_doc += i == 0 ? "var " : ", "
+            ampscript_doc += i == 0 ? "" : ", "
             ampscript_doc += "var @" + ampscript_file + '_' + key
             i = i + 1
         end

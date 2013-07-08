@@ -3,8 +3,13 @@ title: Sample Content Area
 ---
 <table cellpadding="0" cellspacing="0">
 	<tr>
-		<td width="600" align="left">
-			<%= page_data "sampleContentArea", "test" %>
+		<td width="600" align="center">
+			<img src="<%= page_data "sampleContentArea", "image" %>" alt="" style="display: block;" />
+		</td>
+	</tr>
+	<tr>
+		<td width="600" align="center">
+			<a href="<%= page_link "sampleContentArea", "url" %>"><%= page_data "sampleContentArea", "header" %></a>
 		</td>
 	</tr>
 </table>

@@ -4,16 +4,15 @@ compass_config do |config|
 end
 
 set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
 set :images_dir, 'images'
-#set :build_dir, 'A:\gopro'
+#set :build_dir, 'A:\SetDirectory'
 set :is_building, false
-set :et_content_dir, "Shared Items\\Shared Contents\\Responsive Template\\Content\\"
+set :et_content_dir, "Content\\"
 
 configure :build do
   activate :minify_css
   activate :relative_assets
-  set :is_building, false
+  set :is_building, true
 end
 
 helpers do
