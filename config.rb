@@ -16,8 +16,10 @@ configure :build do
 end
 
 helpers do
+  set :contentAreaCounter, 0
   def content_area(area)
-    concat is_building == true ? '<custom type="content" name="' + area + '">' : partial("content/" + area)
+    set :contentAreaCounter, contentAreaCounter + 1
+    concat is_building == true ? '<custom type="content" name="contentarea' + contentAreaCounter.to_s + '">' : partial("content/" + area)
   end
   def page_data(ns, var)
     concat is_building == true ? "%%=v(@" + ns + "_" + var + ")=%%" : data.template[ns][var]
