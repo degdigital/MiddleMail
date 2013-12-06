@@ -5,7 +5,7 @@ end
 
 set :css_dir, 'stylesheets'
 set :images_dir, 'images'
-#set :build_dir, 'A:\SetDirectory'
+#set :build_dir, 'B:/SetDirectory'
 set :is_building, false
 set :et_content_dir, "Content\\"
 
@@ -14,6 +14,7 @@ configure :build do
   activate :relative_assets
   set :is_building, true
 end
+
 
 helpers do
   set :contentAreaCounter, 0
