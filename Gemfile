@@ -10,3 +10,4 @@ gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 
 gem 'premailer'
 gem 'nokogiri'
+gem 'mail'
