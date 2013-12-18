@@ -1,22 +1,22 @@
 DEPLOY_DIR = 'deploy'
 PREVIEW_DIR = 'preview'
 
-desc "Build the website from source"
+desc "Build the email from source"
 task :build do
-	puts "## Building website"
+	puts "## Building email"
 	status = system("middleman build --clean")
 	puts status ? "OK" : "FAILED"
 end
 
 desc "Build from source in readable format with sample data"
 task :build_preview do
-	puts "## Building website preview"
+	puts "## Building email preview"
 	ENV["BUILD_TYPE"] = 'preview'
 	status = system("middleman build --clean --glob=*.html")
 	puts status ? "OK" : "FAILED"	
 end
 
-desc "Deploy website via robocopy"
+desc "Deploy email via robocopy"
 task :deploy  do
 	status = system("robocopy #{PREVIEW_DIR} #{DEPLOY_DIR} /Z /E")
 end
@@ -29,11 +29,11 @@ task :server do
   system("middleman server")
 end
 
-desc "Build and deploy website to the sandbox"
+desc "Build and deploy email to the sandbox"
 task :sandbox => [:build_preview, :deploy] do
 end
 
-desc "Build and deploy website to the sandbox"
+desc "Build and deploy email to the sandbox"
 task :build_images do
 	status = system("middleman build --glob=images/*")
 end
