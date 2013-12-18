@@ -13,7 +13,7 @@ task :build_preview do
 	puts "## Building email preview"
 	ENV["BUILD_TYPE"] = 'preview'
 	status = system("middleman build --clean --glob=*.html")
-	puts status ? "OK" : "FAILED"	
+	puts status ? "OK" : "FAILED"
 end
 
 desc "Deploy email via robocopy"
@@ -66,14 +66,14 @@ task :mail, :filename do |t, args|
 	password = ENV["GMAIL_PASSWORD"]
 
 	mail = Mail.new do
-	  from     'MM Tet Email'
+	  from     'MM Test Email'
 	  to       sendTo
 	  subject  '-- TEST EMAIL -- [' + filename + ']'
 	  content_type 'text/html; charset=UTF-8'
 	  body     File.read(PREVIEW_DIR + "/" + filename)
 	end
 
-	mail.delivery_method :smtp, 
+	mail.delivery_method :smtp,
 	 					 :address    => "smtp.gmail.com",
                          :port       => 587,
                          :user_name  => username,
