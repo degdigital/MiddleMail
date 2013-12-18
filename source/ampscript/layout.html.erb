@@ -1,7 +1,7 @@
 <%
-	
-	concat "<!--\n"
-	concat "%%[\n"
+
+    concat "<!--\n"
+    concat "%%[\n"
 
     i = 0;
     data.template[ns].each do |key, value|
@@ -10,11 +10,13 @@
         i = i + 1
     end
 
-	data.template[ns].each do |key, value|
-	    concat "set @" + ns + '_' + key + " = \"" + value + "\"\n"
-	end
+    concat "\n"
 
-	concat "]%%\n"
-	concat "-->"
+    data.template[ns].each do |key, value|
+        concat "set @" + ns + '_' + key + " = \"" + value + "\"\n"
+    end
+
+    concat "]%%\n"
+    concat "-->"
 %>
 %%=ContentAreaByName("<%= et_content_dir + ns %>")=%%
