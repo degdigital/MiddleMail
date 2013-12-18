@@ -8,11 +8,7 @@ class EmailTemplateHelpers < Middleman::Extension
 	helpers do
 
 	  def getvar ns, var
-	  	if ( data.template[page_classes] && data.template[page_classes][ns] )
-	  		return data.template[page_classes][ns][var]
-	  	end
-
-  		return data.template[ns][var]
+		return data.template[ns][var]
 	  end
 
 	  def content_area(area = "", parameters = {})
