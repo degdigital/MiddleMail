@@ -16,9 +16,14 @@ task :build_preview do
 	puts status ? "OK" : "FAILED"	
 end
 
-desc "Deploy email via robocopy"
-task :deploy  do
-	status = system("robocopy #{PREVIEW_DIR} #{DEPLOY_DIR} /Z /E")
+desc "Deploy email via robocopy or rsync"
+task :deploy, :os do |t, args|
+os = args[:os] || 'nix'
+if os == 'win'
+status = system("robocopy #{PREVIEW_DIR} #{DEPLOY_DIR} /Z /E")
+else
+status = system("sudo rsync -avz --no-perms #{PREVIEW_DIR}/ #{DEPLOY_DIR}")
+end
 end
 
 task :build_all => [:build, :sandbox] do
