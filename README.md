@@ -14,5 +14,5 @@ git clone git://github.com/degdigital/MiddlemanEmailTemplate.git ~/.middleman/Mi
 Then:
 
 ```bash
-middleman init middleman_email_template --template=MiddlemanEmailTemplate
+middleman init middleman_email_template --template=MiddlemanEmailTemplate --skip-git
 ```
