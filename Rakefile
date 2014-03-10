@@ -12,7 +12,7 @@ desc "Build from source in readable format with sample data"
 task :build_preview do
 	puts "## Building email preview"
 	ENV["BUILD_TYPE"] = 'preview'
-	status = system("middleman build --clean --glob=*.html")
+	status = system("middleman build --clean")
 	puts status ? "OK" : "FAILED"
 end
 
