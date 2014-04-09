@@ -1,4 +1,4 @@
-DEPLOY_DIR = 'deploy'
+DEPLOY_DIR = '~/_Sandbox/DigitalDirect/Client/Project'
 PREVIEW_DIR = 'preview'
 
 desc "Build the email from source"
