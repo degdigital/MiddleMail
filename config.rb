@@ -1,4 +1,4 @@
-require '_helpers'
+require 'lib/_helpers'
 
 compass_config do |config|
   config.output_style = :compressed

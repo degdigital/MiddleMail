@@ -8,21 +8,16 @@
     <% end %>
     <title><%= data.page.title || "Email Template" %></title>
 
-    <style>
-        <% css_path = sitemap.resources.select { |p| p.source_file.match(/reset[.]css/) }.first %>
-        <%= css_path.render %>
-    </style>
-    <style>
-        <% css_path = sitemap.resources.select { |p| p.source_file.match(/all[.]css[.]scss$/) }.first %>
-        <%= css_path.render %>
-    </style>
+    <%= inline_stylesheet 'reset' %>
+    <%= inline_stylesheet 'all' %>
+    <%= stylesheet_link_tag 'premail' %>
 </head>
 
-<body style="background: #fff;font-family:Arial, Helvetica, sans-serif; font-size:1em;">
-    <table id="backgroundTable" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#fff;">
+<body>
+    <table id="backgroundTable" width="100%" style="background:#fff;">
         <tr>
             <td class="body" align="center" valign="top" style="background:#fff;" width="100%">
-                <table cellpadding="0" cellspacing="0">
+                <table>
                     <tr>
                         <td class="main" width="600" align="center">
                             <%= yield %>

@@ -15,3 +15,9 @@
 
 # Ignore DS_Store
 .DS_Store
+
+node_modules
+npm-debug.log
+build
+preview
+.litmus
