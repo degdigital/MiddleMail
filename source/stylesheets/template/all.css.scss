@@ -1,0 +1,7 @@
+@import "Partials/reset";
+
+td[class=body] {
+    @media only screen and (max-width: 600px) {
+        padding: 0 1em;
+    }
+}

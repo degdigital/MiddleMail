@@ -8,8 +8,8 @@ module.exports = {
                 fileSystem: "smbfs",
             },
             share: {
-                host: "degsalpha02.degdarwin.com",
-                folder: "/_APPLICATION/SANDBOX.alpha/WebRoot/<%= paths.sandbox.server %>"
+                host: "<%= mount.host %>",
+                folder: "<%= mount.folder %>"
             },
             mountPoint: "./<%= paths.sandbox.local %>"
         }

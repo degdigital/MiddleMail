@@ -8,15 +8,14 @@
     <% end %>
     <title><%= data.page.title || "Email Template" %></title>
 
-    <%= inline_stylesheet 'reset' %>
-    <%= inline_stylesheet 'all' %>
-    <%= stylesheet_link_tag 'premail' %>
+    <%= inline_stylesheet 'template/all' %>
+    <%= stylesheet_link_tag 'template/partials/_base' %>
 </head>
 
 <body>
-    <table id="backgroundTable" width="100%" style="background:#fff;">
+    <table id="backgroundTable" width="100%">
         <tr>
-            <td class="body" align="center" valign="top" style="background:#fff;" width="100%">
+            <td class="body" align="center" valign="top" width="100%">
                 <table>
                     <tr>
                         <td class="main" width="600" align="center">
