@@ -8,8 +8,8 @@ module.exports = {
                 fileSystem: "smbfs",
             },
             share: {
-                host: "<%= mount.host %>",
-                folder: "<%= mount.folder %>"
+                host: "<%= paths.sandbox.host %>",
+                folder: "<%= paths.sandbox.base %>"
             },
             mountPoint: "./<%= paths.sandbox.local %>"
         }

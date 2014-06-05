@@ -1,10 +1,10 @@
 module.exports = {
     test: {
         options: {
-          key: '<%= mailgunConfig.key %>',
-          sender: '<%= mailgunConfig.sender %>',
-          recipient: '<%= mailgunConfig.recipient %>',
-          subject: '<%= mailgunConfig.subject %>'            
+          key: '<%= mailconfig.mailgun.key %>',
+          sender: '<%= mailconfig.mailgun.sender %>',
+          recipient: '<%= mailconfig.mailgun.recipient %>',
+          subject: '(Test)'            
         },
         src: ['preview/*.html']
     }

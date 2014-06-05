@@ -16,3 +16,22 @@ Then:
 ```bash
 middleman init middleman_email_template --template=MiddlemanEmailTemplate --skip-git
 ```
+
+## Mail Service Config
+
+Create a __.mailconfig__ file and add the following contents:
+
+```json
+{
+    "mailgun": {
+        "key": "",
+        "sender": "",
+        "recipient": ""
+    },
+    "litmus": {
+        "username": "",
+        "password": "",
+        "url": ""
+    }
+}
+```

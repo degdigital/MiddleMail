@@ -4,7 +4,7 @@ module.exports = {
             windows: {
                 driveLetter: "X"
             },
-            mountPoint: "./<%= paths.sandbox.local %>"
+            mountPoint: "./__sandbox"
         }
     }
 };

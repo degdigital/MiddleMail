@@ -5,7 +5,7 @@ module.exports = {
         "expand": true, 
         "cwd": "preview",
         "src": ["**/*.*"], 
-        "dest": 'sandbox'
+        "dest": '__sandbox/<%= paths.sandbox.folder %>'
       }
     ]
   }

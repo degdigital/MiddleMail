@@ -3,9 +3,9 @@ module.exports = {
         src: ['preview/confirmation.html'],
         options: {
             clients: ["gmailnew"],
-            username: "<%= litmusConfig.username %>",
-            password: "<%= litmusConfig.password %>",
-            url: "<%= litmusConfig.url %>"            
+            username: "<%= mailconfig.litmus.username %>",
+            password: "<%= mailconfig.litmus.password %>",
+            url: "<%= mailconfig.litmus.url %>"            
         }
     }
 };

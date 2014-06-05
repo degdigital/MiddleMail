@@ -20,4 +20,4 @@ node_modules
 npm-debug.log
 build
 preview
-.litmus
+.mailconfig

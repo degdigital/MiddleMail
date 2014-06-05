@@ -1,10 +1,12 @@
 build:
     - 'shell:build'
     - 'premailer:build'
+    - 'string-replace:build'
 preview:
     - 'env:preview'
     - 'shell:build'
     - 'premailer:preview'
+    - 'string-replace:preview'
 server:
     - 'shell:server'
 sandbox:

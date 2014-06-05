@@ -3,16 +3,27 @@ module.exports = {
         options: {
             
         },
-        files: {
-            'preview/template.html': ['preview/template.html']
-        }
+        files: [{
+            expand: true,
+            cwd: 'preview',
+            src: ['**/*.html'],
+            dest: 'preview'
+        }]
     },
     build: {
         options: {
-            
         },
-        files: {
-            'build/template.html': ['build/template.html']
-        }
+        files: [{
+            expand: true,
+            cwd: 'build',
+            src: ['*.html'],
+            dest: 'build'
+        },
+        {
+            expand: true,
+            cwd: 'build/content',
+            src: ['*.html'],
+            dest: 'build/content'
+        }]
     }
 };
