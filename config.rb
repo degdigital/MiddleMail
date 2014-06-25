@@ -25,3 +25,5 @@ data.template.each do |key, value|
 end
 
 ignore "/ampscript/layout.html"
+
+page "/content/*", :layout => "contentarea"
