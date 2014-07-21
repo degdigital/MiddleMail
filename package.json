@@ -10,7 +10,7 @@
     "grunt-env": "~0.4.1",
     "grunt-mount": "~0.2.4",
     "grunt-litmus": "~0.1.4",
-    "grunt-premailer": "~0.2.6",
+    "grunt-premailer": "0.2.6",
     "grunt-mailgun": "~0.0.2",
     "cli-table": "~0.3.0",
     "grunt-string-replace": "~0.2.7"
