@@ -1,0 +1,45 @@
+.content {
+	margin: 0 auto;
+	padding: $spacing-vertical $spacing-horizontal;
+	max-width: 50em;
+}
+
+.top-wrapper {
+	background: $color-blue url('../images/computer.jpg') no-repeat center top;
+	background-size: auto 100%;
+	color: $color-white;
+	text-align: center;
+	border-bottom: 16px solid $color-blue;
+}
+
+.bottom-wrapper {
+	background: $color-white;
+	color: $color-grey;
+	.content { padding-top: 0; }
+}
+
+.footer {
+	background: $color-grey;
+	.content { }
+}
+
+@media screen and (min-width: $mq-small) {
+
+	.content {
+		padding: $spacing-vertical-large $spacing-horizontal-large;
+	}
+	
+	.top-wrapper {
+		.content { padding: 5em 3em; }
+	}
+
+	.footer {
+		.content { padding: 1em 1.5em; }
+	}
+}
+
+@media screen and (min-width: 70em) {
+	.top-wrapper {
+		background-size: 100% auto;
+	}
+}

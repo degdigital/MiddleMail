@@ -1,0 +1,27 @@
+.btn {
+	font-size: 1em;
+	display: inline-block;
+	width: 5.5em;
+	margin: 1em .2em 0;
+	padding: .5em 1em;
+
+	text-align: center;
+	text-decoration: none;
+	color: $color-white;
+
+	border-radius: 0.1em;
+	background: $color-green;
+	@include transition(all, .5s);
+}
+
+.btn:hover {
+	background: darken($color-green,10%);
+	color: $color-white;
+}
+
+@media screen and (min-width: $mq-small) {
+
+	.btn { font-size: 1.25em; }
+
+}
+

@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic);
+
+body {
+	background-color: $color-white;
+	font-family: $font-family-primary;
+	font-size: 1em;
+}
+
+a {
+	color: $color-blue;
+	text-decoration: none;
+	@include transition(all, .5s);
+	&:hover { color: $color-light-blue; }
+}
+
+h1,h2 {
+	font-family: $font-family-primary;
+	font-weight: 400;
+}
+h1 { 
+	font-size: 3em;
+	margin: .5em 0 0;
+}
+h2 { 
+	font-size: 1.5em; 
+	color: $color-blue;
+	margin: .75em 0 .5em; 
+}
+ol { padding-left: 1.5em; }
+li { margin: .75em 0; }
+
+code {
+	font-size: .8em;
+	padding: .25em .5em;
+	background: $color-light-blue;
+	color: darken($color-light-blue, 50%);
+	border-radius: .25em;
+	vertical-align: middle;
+	display: block;
+}
+
+@media screen and (min-width: 30em) {
+
+	code { white-space: nowrap; display: inline; }
+
+}
+
+@media screen and (min-width: $mq-small) {
+
+	h1 { font-size: 4.5em; }
+	h2 { font-size: 2.25em; }
+	ol { padding-left: 2em; }
+	p, li { font-size: 1.2em; }
+
+}

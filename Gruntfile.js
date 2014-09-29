@@ -1,19 +1,22 @@
 module.exports = function(grunt) {
 
     var paths = {
-        sandbox: {
-            server: 'DigitalDirect/[ClientName]/[Project]',
-            local: 'sandbox'
+        source: {
+            css: 'source/css',
+            images: 'source/images',
+            js: 'source/js'
+        },
+        dest: {
+            css: 'css',
+            images: 'images',
+            js: 'js'
         }
     };
 
-    require('load-grunt-config')(grunt, { 
-        config: { 
-            paths: paths,
-            litmusConfig: grunt.file.readJSON('.litmus')    
+    require('load-grunt-config')(grunt, {
+        config: {
+            paths: paths
         }
     });
 
 };
-
-

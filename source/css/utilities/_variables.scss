@@ -1,0 +1,18 @@
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #333;
+$color-dark-grey: darken($color-grey, 20%);
+$color-blue: #0A81C4;
+$color-light-blue: #c8e0f0;
+$color-dark-blue: #005581;
+$color-green: #8DC63F;
+
+$font-family-primary: 'Asap', sans-serif;
+
+$spacing-vertical: 2em;
+$spacing-horizontal: 1.5em;
+
+$spacing-vertical-large: $spacing-vertical * 2;
+$spacing-horizontal-large: $spacing-horizontal * 2;
+
+$mq-small: 38em;

@@ -1,0 +1,19 @@
+.what-item {
+	margin-top: 2.5em;
+	position: relative;
+	p { line-height: 1.75em; }
+	li { line-height: 1.8em; }
+
+	&:first-child {
+		h2 { margin-top: 0; }
+	}
+	a {
+		color: $color-grey;
+	}
+}
+
+@media screen and (min-width: $mq-small) {
+	.what-item { 
+		margin-top: $spacing-vertical-large;
+	}
+}

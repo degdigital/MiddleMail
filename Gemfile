@@ -1,10 +1,10 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'https://rubygems.org'
-
-gem 'middleman'
+source "https://rubygems.org"
+gem 'compass', '~> 1.0.0.alpha.18'
 gem 'compass-normalize'
-gem 'nokogiri'
-gem 'premailer'
-
-require 'rbconfig'
+gem 'sass'
+gem 'uglifier'
+gem 'yui-compressor'
+gem 'json', '~> 1.7.7'
+gem 'sprockets', '~> 2.0'
+gem 'closure-compiler'
+gem 'sass-globbing'

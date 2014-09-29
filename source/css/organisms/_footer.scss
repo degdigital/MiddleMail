@@ -1,0 +1,24 @@
+.footer {
+	a { 
+		color: $color-white;
+		&:before { color: lighten($color-grey, 30%); }
+	}
+}
+
+.footer-logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100px;
+	margin-right: 2.5em;
+}
+
+.footer-social {
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	li {
+		display: inline-block;
+		margin-right: 1.5em;
+	}
+}
