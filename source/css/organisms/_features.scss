@@ -1,12 +1,13 @@
 .features {
 	list-style: none;
+	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 
 .feature {
 	width: 25%;
-	margin: 2em 0;
+	margin: 1em 0;
 	display: inline-block;
 	vertical-align: top;
 	a {
@@ -18,8 +19,11 @@
 .feature-icon {
 	width: 4em;
 	height: 4em;
-	margin: 0 auto;
+	margin: 0 auto .75em;
 	padding: 1em;
+	border-radius: 50%;
+	background: rgba(153, 153, 153, 0.11);
+
 	img {
 		display: block;
 		margin: 0 auto;

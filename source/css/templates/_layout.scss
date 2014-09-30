@@ -5,7 +5,8 @@
 }
 
 .top-wrapper {
-	background: $color-blue url('../images/computer.jpg') no-repeat center top;
+	background: $color-blue url('../images/computer.jpg') center top no-repeat;
+	background-attachment: fixed;
 	background-size: auto 100%;
 	color: $color-white;
 	text-align: center;
