@@ -6,19 +6,19 @@
 }
 
 .footer-logo {
-	display: inline-block;
-	vertical-align: middle;
+	display: block;
+	margin: 0 auto;
 	width: 100px;
-	margin-right: 2.5em;
 }
 
 .footer-social {
 	list-style: none;
+	margin: 2em 0 0 0;
 	padding: 0;
-	display: inline-block;
-	vertical-align: middle;
+	text-align: center;
 	li {
 		display: inline-block;
-		margin-right: 1.5em;
+		margin: 0 0 0 1.5em;
+		&:first-child { margin-left: 0; }
 	}
 }

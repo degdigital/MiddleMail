@@ -1,14 +1,12 @@
 .what-item {
 	margin-top: 2.5em;
 	position: relative;
+	text-align: center;
 	p { line-height: 1.75em; }
 	li { line-height: 1.8em; }
 
 	&:first-child {
 		h2 { margin-top: 0; }
-	}
-	a {
-		color: $color-grey;
 	}
 }
 

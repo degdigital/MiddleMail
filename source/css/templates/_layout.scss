@@ -20,7 +20,6 @@
 
 .footer {
 	background: $color-grey;
-	.content { }
 }
 
 @media screen and (min-width: $mq-small) {
@@ -34,7 +33,7 @@
 	}
 
 	.footer {
-		.content { padding: 1em 1.5em; }
+		.content { padding: 3em 1.5em; }
 	}
 }
 

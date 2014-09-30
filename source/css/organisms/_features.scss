@@ -1,0 +1,28 @@
+.features {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+
+.feature {
+	width: 25%;
+	margin: 2em 0;
+	display: inline-block;
+	vertical-align: top;
+	a {
+		color: $color-green;
+		line-height: 1;
+	}
+}
+
+.feature-icon {
+	width: 4em;
+	height: 4em;
+	margin: 0 auto;
+	padding: 1em;
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+}
