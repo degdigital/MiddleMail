@@ -21,7 +21,10 @@
 
 @media screen and (min-width: $mq-small) {
 
-	.btn { font-size: 1.25em; }
+	.btn {
+		font-size: 1.25em;
+		margin: 1em .5em 0;
+	}
 
 }
 

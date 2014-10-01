@@ -26,17 +26,18 @@ h2 {
 	color: $color-blue;
 	margin: .75em 0 .5em; 
 }
-ol { padding-left: 1.5em; }
 li { margin: .75em 0; }
 
 code {
 	font-size: .8em;
-	padding: .25em .5em;
+	padding: .25em .75em;
 	background: $color-light-blue;
 	color: darken($color-light-blue, 50%);
 	border-radius: .25em;
 	vertical-align: middle;
 	display: block;
+	overflow: auto;
+	white-space: nowrap;
 }
 
 @media screen and (min-width: 30em) {

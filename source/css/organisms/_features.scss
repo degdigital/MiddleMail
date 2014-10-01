@@ -6,10 +6,13 @@
 }
 
 .feature {
-	width: 25%;
+	width: 50%;
 	margin: 1em 0;
 	display: inline-block;
 	vertical-align: top;
+	&:nth-last-of-type(-n+2) {
+		margin-bottom: 0;
+	}
 	a {
 		color: $color-green;
 		line-height: 1;
@@ -28,5 +31,14 @@
 		display: block;
 		margin: 0 auto;
 		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: $mq-small) {
+	.feature {
+		width: 25%;
+		&:nth-last-of-type(-n+4) {
+			margin-bottom: 0;
+		}
 	}
 }
