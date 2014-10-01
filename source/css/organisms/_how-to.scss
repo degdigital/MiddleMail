@@ -5,3 +5,21 @@
 	list-style: none;
 	text-align: left;
 }
+
+.step-label {
+	font-size: .8em;
+	color: $color-light-grey;
+}
+
+
+code {
+	font-size: .8em;
+	padding: .25em .75em;
+	background: rgba($color-light-blue, .2);
+	color: darken($color-light-blue, 50%);
+	border-radius: .25em;
+	vertical-align: middle;
+	display: block;
+	overflow: auto;
+	white-space: nowrap;
+}

@@ -1,6 +1,7 @@
 $color-white: #fff;
 $color-black: #000;
 $color-grey: #333;
+$color-light-grey: lighten($color-grey, 30%);
 $color-dark-grey: darken($color-grey, 20%);
 $color-blue: #0A81C4;
 $color-light-blue: #c8e0f0;
