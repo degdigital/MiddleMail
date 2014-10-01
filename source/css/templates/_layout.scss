@@ -10,7 +10,7 @@
 	background-size: auto 100%;
 	color: $color-white;
 	text-align: center;
-	border-bottom: 16px solid $color-blue;
+	border-bottom: 1em solid $color-blue;
 }
 
 .bottom-wrapper {
@@ -29,10 +29,6 @@
 		padding: $spacing-vertical-large $spacing-horizontal-large;
 	}
 	
-	.top-wrapper {
-		.content { padding: 5em 3em; }
-	}
-
 	.footer {
 		.content { padding: 3em 1.5em; }
 	}

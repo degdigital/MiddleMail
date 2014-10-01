@@ -1,4 +1,5 @@
 .footer {
+	border-top: 1em solid lighten($color-grey, 30%);
 	a { 
 		color: $color-white;
 		&:before { color: lighten($color-grey, 30%); }
@@ -18,7 +19,7 @@
 	text-align: center;
 	li {
 		display: inline-block;
-		margin: 0 0 0 1.5em;
+		margin: .5em 0 .5em 1.5em;
 		&:first-child { margin-left: 0; }
 	}
 }
