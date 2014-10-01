@@ -1,19 +1,13 @@
-build:
-    - 'shell:build'
-    - 'premailer:build'
-    - 'string-replace:build'
+default:
+    - "env:build"
+    - "shell:build"
+    - "emailBuilder:build"
+    - "string-replace:build"
+    - "clean:build"
+server:
+    - "shell:server"
 preview:
     - 'env:preview'
     - 'shell:build'
-    - 'premailer:preview'
-    - 'string-replace:preview'
-server:
-    - 'shell:server'
-sandbox:
-    - 'mount:sandbox'
-    - 'copy:preview'
-    - 'unmount:sandbox'
-test:
-    - 'mailgun:test'
-litmus:
-    - 'mailgun:litmus'
+    - 'emailBuilder:preview'
+    - 'clean:preview'

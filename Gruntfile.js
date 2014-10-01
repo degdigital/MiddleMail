@@ -1,20 +1,22 @@
 module.exports = function(grunt) {
 
-    var paths = {
-        sandbox: {
-            host: '',
-            base: '',
-            folder: ''
-        }
-    };
+    var target = grunt.option('target');
 
-    require('load-grunt-config')(grunt, { 
-        config: { 
-            paths: paths,
-            litmusConfig: grunt.file.readJSON('.mailconfig')
-        }
+    var paths = {
+        tmpBuildDir: 'tmp.build',
+        buildDir: 'build',
+        tmpPreviewDir: 'tmp.preview',
+        previewDir: 'preview'
+    }
+
+    if ( target && target === 'preview' ) {
+        paths.tmpBuildDir = 'tmp.preview';
+        paths.buildDir = 'preview';
+    }
+
+    require('load-grunt-config')(grunt, {
+        config: { paths: paths }
     });
 
 };
-
 

@@ -1,19 +1,16 @@
 module.exports = {
     build: {
         options: {
-            replacements: [{
-                pattern: /((.|\n)*)<!--STRIP-->/ig,
-                replacement: ''
-            },{
-                pattern: /<!--\/STRIP-->((.|\n)*)/ig,
-                replacement: ''
-            }]
+            replacements: [
+                { pattern: '<html><body>', replacement: '' },
+                { pattern: '</body></html>', replacement: '' }
+            ]
         },
         files: [{
             expand: true,
-            cwd: 'build',
+            cwd: '<%= paths.buildDir %>/content',
             src: ['**/*.html'],
-            dest: 'build'
+            dest: '<%= paths.buildDir %>/content'
         }]
     },
     preview: {
@@ -24,13 +21,14 @@ module.exports = {
             },{
                 pattern: /<!--\/STRIP-->((.|\n)*)/ig,
                 replacement: ''
-            }]
+            },{ pattern: '<html><body>', replacement: '' },
+                { pattern: '</body></html>', replacement: '' }]
         },
         files: [{
             expand: true,
-            cwd: 'preview',
+            cwd: '<%= paths.previewDir %>/content',
             src: ['**/*.html'],
-            dest: 'preview'
+            dest: '<%= paths.previewDir %>/content'
         }]
     }
 };
