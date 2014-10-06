@@ -1,0 +1,31 @@
+.interior-header {
+	background: $color-blue;
+	color: $color-white;
+	@include clearfix;
+	
+	a { color: $color-white; }
+
+	.content {
+		padding: 1em 1.5em;
+	}
+
+	.header,
+	.by-deg {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.header {
+		font-size: 1.5em;
+		img {
+			width: .9em;
+			display: inline-block;
+			margin: 0 .25em 0 0;
+		}
+	}
+
+	.by-deg {
+		margin: 0;
+	}
+
+}

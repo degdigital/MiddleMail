@@ -33,5 +33,14 @@
 	.by-deg {
 		margin: 1em 0 2em;
 	}
+}
 
+@media screen and (min-width: $mq-large) {
+	.header {
+		img { 
+			display: block;
+			margin: 0 auto .25em;
+			width: 100px;
+		}
+	}
 }

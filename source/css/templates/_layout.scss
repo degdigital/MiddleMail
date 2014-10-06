@@ -34,7 +34,7 @@
 	}
 }
 
-@media screen and (min-width: 70em) {
+@media screen and (min-width: $mq-large) {
 	.top-wrapper {
 		background-size: 100% auto;
 	}

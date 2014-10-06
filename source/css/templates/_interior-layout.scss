@@ -1,0 +1,16 @@
+.interior-content .content {
+	@include clearfix;
+}
+
+@media screen and (min-width: $mq-small) {
+	.interior-aside {
+		width: 20%;
+		margin-right: 5%;
+		float: left;
+	}
+
+	.interior-articles {
+		width: 75%;
+		float: right;
+	}
+}
