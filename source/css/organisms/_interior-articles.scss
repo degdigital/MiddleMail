@@ -1,6 +1,14 @@
-.interior-articles {
-	article { margin-bottom: 5em; }
-	header {
-		p { color: $color-light-grey; }
+.interior-articles-header { 
+	h1 {
+		font-size: 2.25em;
+		margin-top: 0; 
+	}
+	p { color: $color-light-grey; }
+}
+
+.interior-article {
+	padding: 2em 0;
+	h2 {
+		margin-top: 0;
 	}
 }

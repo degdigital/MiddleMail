@@ -1,4 +1,13 @@
 .header {
+	background: $color-blue url('../images/computer.jpg') center top no-repeat;
+	background-attachment: fixed;
+	background-size: auto 100%;
+	color: $color-white;
+	text-align: center;
+	border-bottom: 1em solid $color-blue;
+}
+
+.logo {
 	margin: 0;
 	font-size: 2.25em;
 	img {
@@ -23,7 +32,7 @@
 
 @media screen and (min-width: $mq-small) {
 
-	.header { 
+	.logo { 
 		font-size: 5.25em;
 	}
 	.slogan {
@@ -36,7 +45,12 @@
 }
 
 @media screen and (min-width: $mq-large) {
+	
 	.header {
+		background-size: 100% auto;
+	}
+
+	.logo {
 		img { 
 			display: block;
 			margin: 0 auto .25em;

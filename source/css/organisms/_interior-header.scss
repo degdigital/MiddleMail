@@ -9,13 +9,7 @@
 		padding: 1em 1.5em;
 	}
 
-	.header,
-	.by-deg {
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	.header {
+	.logo {
 		font-size: 1.5em;
 		img {
 			width: .9em;
@@ -23,9 +17,4 @@
 			margin: 0 .25em 0 0;
 		}
 	}
-
-	.by-deg {
-		margin: 0;
-	}
-
 }

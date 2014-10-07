@@ -1,9 +1,12 @@
 .footer {
+	background: $color-grey;
 	border-top: 1em solid lighten($color-grey, 30%);
 	a { 
 		color: $color-white;
 		&:before { color: lighten($color-grey, 30%); }
 	}
+
+	.content { padding: 3em 1.5em; }
 }
 
 .footer-logo {
@@ -22,4 +25,12 @@
 		margin: .5em 0 .5em 1.5em;
 		&:first-child { margin-left: 0; }
 	}
+}
+
+@media screen and (min-width: $mq-small) {
+	
+	.footer {
+		.content { padding: 3em 1.5em; }
+	}
+	
 }
