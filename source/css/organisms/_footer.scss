@@ -3,7 +3,7 @@
 	border-top: 1em solid lighten($color-grey, 30%);
 	a { 
 		color: $color-white;
-		&:before { color: lighten($color-grey, 30%); }
+		&:hover, &:before { color: lighten($color-grey, 30%); }
 	}
 
 	.content { padding: 3em 1.5em; }
