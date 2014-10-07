@@ -1,3 +1,6 @@
 .interior-articles {
 	article { margin-bottom: 5em; }
+	header {
+		p { color: $color-light-grey; }
+	}
 }
