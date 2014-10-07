@@ -11,11 +11,22 @@
 
 	.logo {
 		font-size: 1.75em;
+		float: left;
 		img {
 			width: .9em;
 			display: inline-block;
 			margin: 0 .25em 0 0;
 		}
+	}
+}
+
+.nav-toggle {
+	float: right;
+	font-size: 1.5em;
+	margin-right: -.2em;
+	&:before { 
+		margin: 0;
+		color: $color-light-blue;
 	}
 }
 
@@ -33,5 +44,7 @@
 			padding: 1.5em $spacing-horizontal-large;
 		}
 	}
+
+	.nav-toggle { display: none; }
 
 }

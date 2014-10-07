@@ -1,3 +1,16 @@
+
+.interior-aside { 
+	display: none;
+	position: absolute;
+	top: 4em;
+	left: 0;
+	padding: .75em 1.5em;
+	width: 100%;
+	@include box-sizing(border-box);
+	background: $color-light-blue;
+	border-bottom: 8px solid $color-blue;
+}
+
 .interior-nav {
 	ul {
 		list-style: none;
@@ -6,11 +19,37 @@
 	}
 	li {
 		font-size: 1em;
-		margin: 1.5em 0;
-		&:first-child { margin-top: .75em; }
+		margin: 0;
+		padding: 1em 0;
+		&:first-child { 
+			border-top: 0;
+		}
 	}
-	// a {
-	// 	color: $color-green;
-	// 	&:hover { color: lighten($color-green, 20%); }
-	// }
+}
+
+.menu-active .interior-aside {
+	display: block;
+}
+
+@media screen and (min-width: $mq-small) {
+	.interior-aside {
+		display: block;
+		position: relative;
+		top: auto;
+		left: auto;
+		padding: 0;
+		background: $color-white;
+		border: 0;
+	}	
+	.interior-nav {
+		li { 
+			border: 0; 
+			margin: 1.5em 0;
+			padding: 0;
+			&:first-child { 
+				padding-top: 0; 
+				margin-top: .75em;
+			}
+		}
+	}
 }

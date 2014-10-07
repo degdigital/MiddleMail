@@ -6,14 +6,11 @@
 	}
 }
 
-.interior-aside { display: none; }
-
 @media screen and (min-width: $mq-small) {
 	.interior-aside {
 		width: 20%;
 		margin-right: 5%;
 		float: left;
-		display: block;
 	}
 
 	.interior-articles {
