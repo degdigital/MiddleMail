@@ -4,7 +4,7 @@
 
     MIDDLEMAIL.init = function() {
 
-    	this.buttonClass = '.btn-more';
+    	this.buttonClass = '.scroll-to';
 
     	$(this.buttonClass).on('click', function(e) {
     		e.preventDefault();
