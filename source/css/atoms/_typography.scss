@@ -10,7 +10,7 @@ body {
 a {
 	color: $color-blue;
 	text-decoration: none;
-	@include transition(all, .5s);
+	@include transition(color, .5s);
 	&:hover { color: $color-light-blue; }
 }
 

@@ -1,5 +1,16 @@
-.interior-nav ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.interior-nav {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		font-size: 1em;
+		margin: 1.5em 0;
+		&:first-child { margin-top: .75em; }
+	}
+	// a {
+	// 	color: $color-green;
+	// 	&:hover { color: lighten($color-green, 20%); }
+	// }
 }

@@ -11,7 +11,7 @@
 
 	border-radius: 0.1em;
 	background: $color-green;
-	@include transition(all, .5s);
+	@include transition(color, .5s);
 }
 
 .btn:hover {

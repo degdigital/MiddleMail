@@ -1,12 +1,19 @@
-.interior-content .content {
-	@include clearfix;
+.interior-header,
+.interior-content {
+	.content {
+		@include clearfix;
+		max-width: 60em;
+	}
 }
+
+.interior-aside { display: none; }
 
 @media screen and (min-width: $mq-small) {
 	.interior-aside {
 		width: 20%;
 		margin-right: 5%;
 		float: left;
+		display: block;
 	}
 
 	.interior-articles {

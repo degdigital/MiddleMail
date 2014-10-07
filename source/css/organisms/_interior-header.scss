@@ -10,11 +10,28 @@
 	}
 
 	.logo {
-		font-size: 1.5em;
+		font-size: 1.75em;
 		img {
 			width: .9em;
 			display: inline-block;
 			margin: 0 .25em 0 0;
 		}
 	}
+}
+
+.interior-subheader { 
+	p { 
+		color: $color-light-grey; 
+	}
+}
+
+@media screen and (min-width: $mq-small) {
+
+	.interior-header,
+	.interior-subheader {
+		.content {
+			padding: 1.5em $spacing-horizontal-large;
+		}
+	}
+
 }
