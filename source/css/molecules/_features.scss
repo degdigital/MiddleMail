@@ -16,6 +16,12 @@
 	a {
 		color: $color-green;
 		line-height: 1;
+		display: block;
+		@include transition(color .5s);
+		&:hover {
+			color: darken($color-green, 10%);
+			.feature-icon { background: rgba(153, 153, 153, .2); }
+		}
 	}
 }
 
@@ -25,8 +31,8 @@
 	margin: 0 auto .75em;
 	padding: 1em;
 	border-radius: 50%;
-	background: rgba(153, 153, 153, 0.11);
-
+	background: rgba(153, 153, 153, .1);
+	@include transition(background .5s);
 	img {
 		display: block;
 		margin: 0 auto;
