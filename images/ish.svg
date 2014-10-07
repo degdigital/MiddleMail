@@ -1,7 +1,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-<path fill="none" stroke="#666666" stroke-width="2" d="M36.2,34.8c0,3-1.8,5.4-4,5.4H17.8c-2.2,0-4-2.4-4-5.4V15.5c0-3,1.8-5.4,4-5.4h14.4c2.2,0,4,2.4,4,5.4V34.8z
+<path fill="none" stroke="#666666" stroke-width="1.75" d="M36.2,34.8c0,3-1.8,5.4-4,5.4H17.8c-2.2,0-4-2.4-4-5.4V15.5c0-3,1.8-5.4,4-5.4h14.4c2.2,0,4,2.4,4,5.4V34.8z
 	"/>
-<polyline fill="none" stroke="#666666" stroke-width="2" points="41,19 47,25 41,31 "/>
-<polyline fill="none" stroke="#666666" stroke-width="2" points="8,31 2,25 8,19 "/>
+<polyline fill="none" stroke="#666666" stroke-width="1.5" points="41,19 47,25 41,31 "/>
+<polyline fill="none" stroke="#666666" stroke-width="1.5" points="8,31 2,25 8,19 "/>
 </svg>

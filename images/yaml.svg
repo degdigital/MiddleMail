@@ -1,4 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
-<text transform="matrix(1 0 0 1 23.2023 122.158)" fill="#666666" font-family="'Asap'" font-size="126">%</text>
+	 viewBox="0 87 612 609" enable-background="new 0 87 612 609" xml:space="preserve">
+<ellipse fill="none" stroke="#666666" stroke-width="20" stroke-miterlimit="10" cx="215.3" cy="301.6" rx="66.6" ry="76.7"/>
+<ellipse fill="none" stroke="#666666" stroke-width="20" stroke-miterlimit="10" cx="396.7" cy="491.9" rx="66.6" ry="76.7"/>
+<path fill="none" stroke="#666666" stroke-width="12" stroke-miterlimit="10" d="M207.8,574.8L207.8,574.8c-1.1-0.6-1.5-2.1-1-3.2
+	l196.7-353.4c0.6-1.1,2.1-1.5,3.2-1l0,0c1.1,0.6,1.5,2.1,1,3.2L211,573.8C210.4,574.9,208.9,575.4,207.8,574.8z"/>
 </svg>
