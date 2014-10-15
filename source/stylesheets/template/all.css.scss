@@ -2,7 +2,22 @@
 @import "Partials/reset";
 
 td[class=body] {
+	img { max-width: 100% !important; height: auto !important; }
     @media only screen and (max-width: 600px) {
-        padding: 0 1em;
+    	.rise,
+    	.drop,
+    	.stack {
+    		width: 100% !important; 
+    	}
+    	.rise { display: table-header-group; }
+    	.drop { display: table-footer-group; }
+    	.hide { display: none; }
+    	.stack { 
+    		display: block; 
+    		box-sizing: border-box;
+    	}
+        .center { text-align:center !important; }
+        .rise > table > tbody > tr > .content { padding-bottom: 0 !important; }
+
     }
 }
