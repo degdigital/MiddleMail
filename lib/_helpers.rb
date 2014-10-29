@@ -81,8 +81,15 @@ class EmailTemplateHelpers < Middleman::Extension
 	  	end
 	  end
 	  
+	  def embed_stylesheet( name )
+	    content_tag :style, 'data-ignore' => "ignore" do
+	      sprockets[ "#{name}.css" ].to_s
+	    end
+	  end
+	 
+	  
 	  def inline_stylesheet( name )
-	    content_tag :style, 'data-premailer' => "ignore" do
+	    content_tag :style do
 	      sprockets[ "#{name}.css" ].to_s
 	    end
 	  end

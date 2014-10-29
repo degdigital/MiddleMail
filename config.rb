@@ -12,7 +12,7 @@ set :images_dir, 'images'
 set :is_building, false
 set :et_content_dir, "Content\\"
 set :add_regions, false
-set :build_dir, ENV['BUILD_TYPE'] || 'build'
+set :build_dir, ENV['BUILD_TYPE'] == 'preview' ? 'tmp.preview' : 'tmp.build'
 
 configure :build do
   activate :minify_css

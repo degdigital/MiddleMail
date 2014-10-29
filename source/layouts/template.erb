@@ -3,13 +3,11 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <% if is_building == false %>
-    <meta name="viewport" content="width=device-width">
-    <% end %>
+    <meta name="viewport" content="width=device-width" />
     <title><%= data.page.title || "Email Template" %></title>
 
-    <%= inline_stylesheet 'template/all' %>
-    <%= stylesheet_link_tag 'template/partials/base' %>
+    <%= embed_stylesheet 'template/embed' %>
+    <%= inline_stylesheet 'template/inline' %>
 </head>
 
 <body>
