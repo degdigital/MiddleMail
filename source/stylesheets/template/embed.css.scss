@@ -2,8 +2,8 @@
 @import "Partials/reset";
 
 td[class=body] {
-	img { max-width: 100% !important; height: auto !important; }
     @media only screen and (max-width: 600px) {
+    	img { max-width: 100% !important; height: auto !important; }
     	.rise,
     	.drop,
     	.stack {
