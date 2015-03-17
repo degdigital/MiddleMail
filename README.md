@@ -8,11 +8,11 @@ gem install middleman
 ```
 
 ```bash
-git clone git://github.com/degdigital/MiddlemanEmailTemplate.git ~/.middleman/MiddlemanEmailTemplate
+git clone git://github.com/degdigital/MiddlemanEmailTemplate.git ~/.middleman/Middlemail
 ```
 
 Then:
 
 ```bash
-middleman init middleman_email_template --template=MiddlemanEmailTemplate --skip-git
+middleman init middleman_email_template --template=Middlemail --skip-git
 ```
