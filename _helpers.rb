@@ -14,7 +14,7 @@ class EmailTemplateHelpers < Middleman::Extension
 	  def content_area(area = "", parameters = {})
 	    @@app.set :contentAreaCounter, contentAreaCounter + 1
 	    if ( is_building == true )
-	      concat '<custom type="content" name="contentarea' + contentAreaCounter.to_s + '">'
+	      concat '<div data-type="slot" data-key="contentarea' + contentAreaCounter.to_s + '"></div>'
 	    else
 	      if ( add_regions && add_regions == true )
 	        region(area) do
@@ -29,7 +29,7 @@ class EmailTemplateHelpers < Middleman::Extension
 	  def empty_content_area
 	  	@@app.set :contentAreaCounter, contentAreaCounter + 1
 	    if ( is_building == true )
-	      concat '<custom type="content" name="contentarea' + contentAreaCounter.to_s + '">'
+	      concat '<div data-type="slot" data-key="contentarea' + contentAreaCounter.to_s + '"></div>'
 	    end
 	  end
 
